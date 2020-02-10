@@ -1,0 +1,272 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin-top: 0px;
+}
+
+button{
+  font-size: 30px;
+  background: #eee;
+  border-radius: 16px;
+}
+h2 {
+  font-size: 35px;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'PT Serif', serif;
+}
+
+/*Menu pre všetko
+*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+ 
+}
+/* slider na auto
+*/
+.mySlides {
+  display:none;
+  width: 700px;
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.autos {
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Parallax pre úvod*/
+.par {
+  background-image: url("logo.png");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.parallax {
+   background-image: url("energy.png");
+  min-height: 600px; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.parallax1 {
+   background-image: url("tim.jpg");
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.mid {
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+/*.flex-container {
+  display: flex;
+  justify-content: center;
+  flex: 25%*/
+}
+.flex {
+  display: flex;
+  justify-content: left;
+  margin-left: 25px;
+  
+}
+/* naše gesichty*/
+.container {
+  position: relative;
+  width: 50%;
+  margin-left: 15px;
+}
+.mid_image{
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+}
+
+.image {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #8ecbeb;
+  overflow: hidden;
+  width: 80%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+@media screen and (max-width: 535px){
+  .mySlides {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 10px;
+    height: auto;
+
+     }
+
+  .autos {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }   
+.par {
+  min-height: 200px;
+  background-attachment: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.parallax1 {
+   background-image: url("team2.jpg");
+  min-height: 450px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  margin: 0px;
+  z-index: -1;
+}
+.mid {
+  width: 80%;
+  max-width: 100%;
+}
+
+.responsive {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 700px){
+
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .mySlides {
+     width: 80%;
+    max-width: 100%;
+    height: auto;
+  }
+}

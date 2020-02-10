@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="Products.html">Products</a>
+  <a href="my.html">About us</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+</div>
+<div class="par"></div>
+<div style="height: 400px" class="mid">
+  <h2>Welcome to the official page of InEnergy. </h2>
+</div>
+<div class="parallax"><h2>Take a deeper look on our products</h2></div>
+<div style="height: 400px" class="mid">
+  <a href="products.html"><button>About the products</button></a>
+</div>
+<div class="parallax1">
+    <h2>Who we are?<br> 
+    We are students of OA Watsonova Kosice.</h2></div>
+<div style="height: 500px" class="mid">
+  <a href="products.html"><button>About us</button></a>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html> 
